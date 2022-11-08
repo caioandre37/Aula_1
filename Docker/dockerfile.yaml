@@ -1,4 +1,9 @@
-FROM ubuntu:lateste
+FROM node:alpine
 
-RUN sudo apt-get update -y
-RUN sudo apt get upgrade -y
+WORKDIR /usr/app
+
+RUN npm init -y
+RUN npm install cowsay
+RUN npx cowsay Hello Docker
+
+RUN cat package.json
