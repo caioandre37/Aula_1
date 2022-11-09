@@ -18,7 +18,7 @@ ADD index.html /var/www/html/
 LABEL description="Wevserver"
 LABEL version="1.0.0"
 
-USER www-data
+USER root
 
 WORKDIR /var/www/html/
 
